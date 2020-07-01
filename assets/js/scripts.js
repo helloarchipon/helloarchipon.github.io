@@ -116,11 +116,17 @@ document.addEventListener("DOMContentLoaded", function () {
       // Get the src for the large image
       imageLarge.src = image.dataset.src;
       
+      if (image.dataset.srcset != null)
+      {  
       // Get the srcset for the large image
-      imageLarge.srcset = image.dataset.srcset;
+        imageLarge.srcset = image.dataset.srcset;
+      }
       
-      // Get the alt description for the large image
-      imageLarge.alt = image.dataset.alt;
+      if (image.dataset.alt != null)
+      {
+        // Get the alt description for the large image
+        imageLarge.alt = image.dataset.alt;
+      }
       
       // Add class to make it's default opacity 0
       imageLarge.classList.add("lazy");
