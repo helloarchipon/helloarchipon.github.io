@@ -220,7 +220,7 @@ document.addEventListener("DOMContentLoaded", function () {
       clearTimeout(timer);        
     }
     timer = setTimeout(function() {
-      let index = Math.Max(1, Math.ceil(gallery.scrollLeft / vw));
+      let index = Math.Min(1, Math.ceil(gallery.scrollLeft / vw));
       let count = galleryImages.length;
       galleryIndex.innerText = `${index} / ${count}`;
     }, 150);
