@@ -36,6 +36,11 @@
     border-radius: 4px;
     overflow: hidden;
 }
+
+hr.is-superthin {
+  margin: 0;
+  height: 1px;
+}
   
 /* ==========================
 ===== Lazy loading of images 
